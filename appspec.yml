@@ -1,8 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /css/
+  - source: /index.html
     destination: /var/www/html/
+  - source: /admin.css
+    destination: /var/www/html/css/
+  - source: /site.css
+    destination: /var/www/html/css/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
