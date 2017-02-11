@@ -1,19 +1,6 @@
 version: 0.0
 os: linux
 files:
-
-  - source: /css/site.css
-    destination: /var/www/html/css/
-hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
-    - location: scripts/start_server
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 300
-      runas: root
-
+  - source: /index.html
+    destination: /var/www/html/
+  
